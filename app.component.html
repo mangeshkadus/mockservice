@@ -1,0 +1,13 @@
+<router-outlet></router-outlet>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Index</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let name of count; let i = index" [style.backgroundColor]="bg[i]" >
+            <td >{{name}}</td>
+            <td>{{num[i]}}</td>
+        </tr>
+    </tbody>
+</table>
